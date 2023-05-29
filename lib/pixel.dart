@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
 class Pixel extends StatelessWidget {
   Pixel({super.key, required this.color, required this.child});
   final color;
@@ -12,11 +11,11 @@ class Pixel extends StatelessWidget {
         color: color,
         borderRadius: BorderRadius.circular(4),
       ),
-      margin: EdgeInsets.all(1),
+      margin: const EdgeInsets.all(1),
       child: Center(
         child: Text(
           child.toString(),
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
       ),
     );
